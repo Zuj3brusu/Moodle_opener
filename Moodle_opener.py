@@ -34,9 +34,8 @@ def func():
 	val.send_keys(p[0])
 	sub=driver.find_element_by_id('loginbtn')
 	sub.click()
-	if 1:
-		btna=driver.find_element_by_link_text('2')
-		btna.click()
+	btna=driver.find_element_by_link_text('2')
+	btna.click()
 	btna=driver.find_element_by_partial_link_text(course)
 	a=btna.get_property('href')
 	driver.get(a)
